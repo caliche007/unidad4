@@ -1,0 +1,110 @@
+ {
+      margin: 0;
+      padding: 0;
+      } 
+  
+      {
+        background-color: blue;text-align:center;
+        line-height:2 
+        font-family: "Lucida Console", "Courier New", monospace;
+        color:blue;} 
+  
+  #chat{
+      position:fixed;
+      width:250px;
+      height:40px;
+      bottom:0;
+      right:20px;
+      background:green;
+      z-index:1;
+      colorz-e;
+      text-align:center;
+      line-height:40px;
+      font-family: 'Courier New', cursive;
+      font-size:20px;
+      border-radius:20px 20px 0 0;
+      cursor:pointer;
+      }
+  
+  header  
+  
+  #logo{
+      position:absolute;
+      top:30px;
+      left:30px;
+      width:200px;
+      height:60px;
+      font-family: 'Kaushan Script', cursive;
+      font-size:50px;
+      text-align:center;
+      line-height:60px;
+      }
+  
+  .botones{
+      float:left;
+      width:196px;
+      margin:0px 2px;
+      height:48px;
+      background:rgb(19, 212, 51);
+      font-family: 'calibri', cursive;
+      color:white;
+      text-align:center;
+      line-height:48px;
+    }
+      
+  .body 
+  
+  p { background-color: red;	}
+    #texto1{ background-color: rgb(22, 162, 228);	}
+    #texto2{ background-color: rgb(22, 162, 228);	}
+    #texto3{ background-color: rgb(22, 162, 228);	}
+    #texto4{ background-color: rgb(22, 162, 228);	}
+  
+   
+  .caja{
+          width: 33%;
+          height: 100vh;
+          float: left;
+      }
+      
+      #primero{
+      background-color: #65f02e91;
+      }
+      
+      #segundo{
+      background-color: #f11ff191;
+      }
+      
+      #tercero{
+      background-color: #09090ad0;
+      } */
+  
+  
+    p {
+      font-family:  Calibri,  sans-serif    ;
+      font-size: 10;
+    }
+  
+    #empezamos {
+      text-align: center;
+      color: rgb(255, 255, 238);
+      font-size: 10px;
+    }
+    
+    section {
+      text-align: center;
+   } 
+  
+   .mixto{
+      border-style: dotted solid dashed double;text-align: center;
+  }
+   
+  
+      position: relative;
+      margin: 20px auto;
+      width: 1000px;
+      height: 70px;
+      background:rgb(39, 224, 85);
+      text-align: center;
+      line-height: 70px;
+      color: blue

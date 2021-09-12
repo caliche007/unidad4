@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proxima</title>
+</head>
+<header>
+    <h3>Homework 2</h3> <br>
+    <p>Por favor profesor , compartir los videos de las secciones de clase y dar la opcion de descarga para poderlos ver y guardarlos </p>  
+</header> 
+  <br>
+  <br>
+  <body>
+    
+
+
+
+<audio src="https://res.cloudinary.com/misena/video/upload/v1628462520/samples/landscapes/festival_django-12_x4p7ne.mp3"controls autoplay="true">    
+</audio>
+<br>
+
+<video width="560" height="315"src="https://res.cloudinary.com/misena/video/upload/v1628449102/samples/sea-turtle.mp4"controls autoplay="true">    
+</video>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0fcRa5Z6LmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+<br>
+  
+<img src="https://res.cloudinary.com/misena/image/upload/ar_1:1,b_rgb:f0f3f7,bo_5px_solid_rgb:151111,c_fill,e_anti_removal,g_custom,r_max,w_220/v1628449094/samples/landscapes/girl-urban-view.jpg"/>
+    
+    <p>Anotacion final = Muy buena la pagina <b>cloudinary</b> no solamente para subir archivos sino que tiene otras funcionalidades interesantes </p><br><br>
+
+<h3>Formulario de registro</h3>
+<br>
+<br>
+
+<table>
+    
+
+    <form>
+        <label for="fname">Nombre de usuario:</label><br>
+        <input type="text" id="nombre de usuario" name="fname" value=""><br>
+        
+        <label for="lname">Contraseña:</label><br>
+        <input type="text" id="contraseña" name="lname" value=""><br>
+
+        <label for="lname">Correo:</label><br>
+        <input type="text" id="correo" name="lname" value=""><br>
+
+        <label for="lname">Url de perfil de facebook:</label><br>
+        <input type="text" id="url de perfil de facebook" name="lname" value=""><br>
+
+
+        <label for="lname">Fecha de nacimiento:</label><br>
+        <input type="text" id="Fecha de nacimiento" name="lname" value=""><br>
+
+
+        <label for="lname">Pais de nacimiento:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br>
+      </form>
+
+    <tr>
+        <p>Rol</p>
+      <form>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">Desarrollador</label>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css">Diseñador</label><br>
+        </form>
+        
+        <p>Color favorito</p>
+        <input type="color" value="#ff0000"><br><br>
+
+
+
+        
+  <input type="submit" value="Registrarse">
+    </tr>
+  </table>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    </head>
+    <body>
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </body>
+    <script>
+        var ctx= document.getElementById("myChart").getContext("2d");
+        var myChart= new Chart(ctx,{
+            type:"pie",
+            data:{
+                labels:['col1','col2','col3'],
+                datasets:[{
+                        label:'Num datos',
+                        data:[10,9,15],
+                        backgroundColor:[
+                            'rgb(66, 134, 244,0.5)',
+                            'rgb(74, 135, 72,0.5)',
+                            'rgb(229, 89, 50,0.5)'
+                        ]
+                }]
+            },
+            options:{
+                scales:{
+                    yAxes:[{
+                            ticks:{
+                                beginAtZero:true
+                            }
+                    }]
+                }
+            }
+        });
+    </script>
+</html>
+
+</body>
+
+
+
+</html>
