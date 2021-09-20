@@ -194,28 +194,28 @@
         display: block;
     }
    
+    h1 {
+      margin: 40px 0px;
+    }
+    
+    input {
+      margin-bottom: 20px;
+    }
+    select {
+      margin: 40px 0px;
+    }
+    
+    h1:hover {
+      color: red;
+    }
+    
+    a {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
 
     
-  /* .caja{
-          width: 33%;
-          height: 100vh;
-          float: left;
-      }
-      
-      #primero{
-      background-color: #65f02e91;
-      }
-      
-      #segundo{
-      background-color: #f11ff191;
-      }
-      
-      #tercero{
-      background-color: #09090ad0;
-      } */ */
-  
-  
-    p {
+  p {
       font-family:  Calibri,  sans-serif    ;
       font-size: 10;
     }

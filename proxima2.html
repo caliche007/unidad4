@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unidad 5 bootstrap</title>
+  <link rel="shortcut icon"
+  href="https://image.flaticon.com/icons/png/512/196/196395.png"
+  type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+
+
+<h1 id="empezamos">UNIDAD 5</h1>
+  
+</head>
+
+<body>
+
+
+    <!-- prueba pero no salio lo que queria hacer con este codigo  -->
+
+
+
+    
+    <!-- <form id="formas" novalidate method="post">
+        <input type="hidden" />
+      <div class="form-group">
+        <label>Requerido</label>
+        <input type="text" required />
+      </div>
+      <div class="form-group">
+        <label>menos palabras=5, no necesario</label>
+        <input type="text" minlength="5" />
+      </div>
+      <div class="form-group">
+        <label>type=correo electronico, no necesario</label>
+        <input type="email" />
+      </div>
+      <div class="form-group">
+        <label>numero, no necesario</label>
+        <input type="number" />
+      </div>
+      <div class="form-group">
+        <label>numero, min=100, no necesario/label>
+        <input type="number" min="100" />
+      </div>
+      <div class="form-group">
+        <label>required</label>
+        <select required>
+          <option value="">-----</option>
+          <option value="bd">Colombia</option>
+          <option value="us">Peru</option>
+          <option value="ca">Venezuela</option>
+        </select>
+      </div>
+      <div class="form-group inline-label">
+        <p>required, min=2</p>
+        <input id="ch1" type="checkbox" min="2" name="future" required data-pristine-min-message="Select at least 2" />
+        <label for="ch1">Bogota</label><br />
+        <input id="ch2" type="checkbox" min="2" name="future" required data-pristine-min-message="Select at least 2" />
+        <label for="ch2">Lima</label><br />
+        <input id="ch3" type="checkbox" min="2" name="future" required data-pristine-min-message="Select at least 2" />
+        <label for="ch3">Caracas</label>
+      </div>
+      <div class="form-group">
+        <label>pattern=/^\d+\.\d{2}$/ (match decimal with 2 points), required</label>
+        <input type="number" pattern="/^\d+\.\d{2}$/g" required />
+      </div>
+      <div class="form-group">
+        <label>above field with custom message</label>
+        <input type="number" pattern="/^\d+\.\d{2}$/g" required data-pristine-pattern-message="The value must have 2 decimal points" />
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit" class="btn" />
+      </div>
+    </form> -->
+    
+
+
+<!-- navegacion-->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ingresa tus poemas y tus sentimientos</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-4">
+
+          <div class="card">
+            <div class="card-body">
+              <!-- FORM TO ADD TASKS -->
+              <form id="formTask">
+                <div class="form-group">
+                  <input type="text" id="title" placeholder="Escupe lo que sientes" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea id="description" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Guardalo en tu corazon</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div id="tasks"></div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="container">
+    <h1>Registro de tus datos y tus gustos </h1>
+    <a href="login.html" class="link-primary">Iniciar sesión</a>
+    <form action="">
+      <input class="form-control" type="text" placeholder="Nombre y apellidos" aria-label="default input example">
+
+      <input class="form-control" type="number" placeholder="Edad" aria-label="default input example" disabled>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword">
+      </div>
+      <div class="col-auto">
+        <label for="inputPassword2">Confirmar contraseña</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+      </div>
+
+      <h4>En mi tiempo libre yo...</h4>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked disabled>
+        <label class="form-check-label" for="flexCheckDefault">
+          Camino
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          Veo series
+        </label>
+      </div>
+
+      <h4>Sexo</h4>
+
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Mujer
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Hombre
+        </label>
+      </div>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menú</option>
+        <option value="videojuegos">Videojuegos</option>
+        <option value="2">Peliculas</option>
+        <option value="3">Three</option>
+      </select>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign up</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+      </div>
+
+      <!-- Button trigger modal -->
+      <!-- <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+      <!-- Modal -->
+      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Tienes un virus
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+      <!-- <div class="card tarjeta mt-5" style="width: 18rem;">
+        <img
+          src="https://images.unsplash.com/photo-1611003228941-98852ba62227?ixid=MnwyMDU4NzZ8MHwxfGFsbHx8fHx8fHx8fDE2MjM4MzYzMDA&ixlib=rb-1.2.1&fm=jpg&q=85&fit=crop&w=1200&h=900"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Perro</h5>
+          <p class="card-text">El perro, ​​​ llamado perro doméstico o can, ​ y en algunos lugares coloquialmente
+            llamado chucho, ​ tuso, ​ choco, ​ entre otros; es un mamífero carnívoro de la familia de los cánidos, que
+            constituye una especie del género Canis.</p>
+          <a href="https://www.google.com/search?q=perro&rlz=1C1UUXU_esCO940CO940&sxsrf=AOaemvICS2GHEHw8vRIYUrcLInE_BBPZJg:1631749909711&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiQ2OuNloLzAhX4RTABHXvOCdYQ_AUoAXoECAEQAw&biw=1920&bih=937"
+            class="btn btn-primary" target="_blank">Ir a ver más perros</a>
+        </div>
+      </div> -->
+
+     <br>
+     <br>
+ 
+  <title>Iniciar sesión</title>
+    </head>
+    
+    <body>
+      <div class="container">
+        <h1>Iniciar sesión</h1>
+        <a href="index.html" class="link-primary">Registrarse</a>
+        <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="./Scripts/pristine.min.js"></script>
+    <script src="./Scripts/app.js"></script>
+  </body>
+</html>
